@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hjälp och kontakt – utan ARIA</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/utan-aria.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Start</a>
+          </li>
+          <li>
+            <a href="utan-aria.html" class="current">Utan ARIA</a>
+          </li>
+          <li>
+            <a href="med-aria.html">Med ARIA</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="eyebrow">Utan ARIA</p>
+
+    <h1>Hjälp och kontakt</h1>
+
+    <p class="lead">
+      Här hittar du svar på vanliga frågor och kan kontakta oss
+      om du behöver hjälp.
+    </p>
+
+    <section aria-label="Vanliga frågor">
+      <h2>Vanliga frågor</h2>
+
+      <p>
+        Här hittar du svar på några vanliga frågor.
+      </p>
+
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-button">
+              <span>Hur lång är leveranstiden?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+          </h3>
+
+          <div class="accordion-content" hidden>
+            <p>
+              Normal leveranstid är 2–3 arbetsdagar.
+              Du får ett mejl när din beställning har skickats.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-button">
+              <span>Kan jag ändra min beställning?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+          </h3>
+
+          <div class="accordion-content" hidden>
+            <p>
+              Du kan ändra din beställning så länge den
+              inte har hunnit skickas.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-button">
+              <span>Hur gör jag en retur?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+          </h3>
+
+          <div class="accordion-content" hidden>
+            <p>
+              Du har 30 dagar på dig att returnera en vara.
+              Retursedeln finns i din orderhistorik.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Relaterad hjälp</h2>
+
+      <p>
+        Läs mer om några av våra vanligaste ärenden.
+      </p>
+
+      <div class="help-links">
+        <article>
+          <h3>Ändra leveransadress</h3>
+
+          <p>
+            Så gör du om du behöver ändra adress innan
+            beställningen har skickats.
+          </p>
+
+          <a href="#">Läs mer</a>
+        </article>
+
+        <article>
+          <h3>Returnera en vara</h3>
+
+          <p>
+            Information om returer, återbetalning och retursedlar.
+          </p>
+
+          <a href="#">Läs mer</a>
+        </article>
+
+        <article>
+          <h3>Problem med betalning</h3>
+
+          <p>
+            Vanliga orsaker till att en betalning inte går igenom.
+          </p>
+
+          <a href="#">Läs mer</a>
+        </article>
+      </div>
+    </section>
+
+<section>
+  <h2>Kontakta oss</h2>
+
+  <p>
+    Hittar du inte svaret på din fråga kan du skicka ett meddelande.
+  </p>
+
+  <form id="contactForm" novalidate>
+
+    <div class="field">
+      <label for="email">E-postadress</label>
+
+      <input
+        type="email"
+        id="email"
+        name="email">
+
+      <p
+        id="emailError"
+        class="field-error"></p>
+    </div>
+
+    <div class="field">
+      <label for="message">Meddelande</label>
+
+      <textarea
+        id="message"
+        name="message"
+        rows="5"></textarea>
+
+      <p
+        id="messageError"
+        class="field-error"></p>
+    </div>
+
+    <button type="submit">
+      Skicka meddelande
+    </button>
+
+  </form>
+</section>
+  </main>
+
+</body>
+
+</html>

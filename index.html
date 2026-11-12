@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Skärmläsare och ARIA</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <nav aria-label="Huvudmeny">
+      <ul>
+        <li>
+          <a href="index.html" aria-current="page">Start</a>
+        </li>
+        <li>
+          <a href="utan-aria.html">Utan ARIA</a>
+        </li>
+        <li>
+          <a href="med-aria.html">Med ARIA</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="start-page">
+  <p class="eyebrow">Tillgänglighet</p>
+
+  <h1>Skärmläsare och ARIA</h1>
+
+  <p class="lead">
+    Två versioner av samma sida. Funktionerna och det visuella
+    gränssnittet är i stort sett samma, men informationen som
+    förmedlas till en skärmläsare skiljer sig.
+  </p>
+
+  <div class="choices">
+    <a href="utan-aria.html">
+      <strong>Utan ARIA</strong>
+      <span>Testa sidan utan extra information till skärmläsaren.</span>
+    </a>
+
+    <a href="med-aria.html">
+      <strong>Med ARIA</strong>
+      <span>Testa samma sida med ARIA och bättre semantik.</span>
+    </a>
+  </div>
+</main>
+
+</body>
+</html>
